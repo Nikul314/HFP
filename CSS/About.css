@@ -1,0 +1,224 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap');
+
+/* Responsive Media */
+
+@media all and (max-width:360px) {
+    .about{
+        margin-top: 50px!important;
+    }
+    .about-content{
+        margin-top: 80px!important;
+    }
+    .content{
+        padding: 0px!important;
+        width: 100%!important;
+    }
+    .carousel-item{
+        height: 100%!important;
+        width: 100%!important;
+        margin: 0px!important;
+    }
+    img{
+        width: 100%!important;
+        height:500px!important;
+    }
+    .nl1,.nl2,.nl3,.nl4{
+        animation: none!important;
+    }
+    .icons{
+        padding: 0%!important;
+    }
+    .icons a{
+        margin: 0 5.6px!important;
+    }
+}
+
+body{
+    background-color:rgb(0, 0, 0) ;
+    font-family: 'montserrat', sans-serif;
+}
+a{text-decoration: none;}
+.navbar-brand{
+    animation: fadeleft 1s ease-in-out;
+    letter-spacing: .5em;
+    font-family: Anurati;
+    color: rgba(255, 255, 255, 0.767)!important;
+    font-size: 1.5em!important; 
+}
+.nav-link{
+    letter-spacing: .1em;
+    font-size:.9em!important;
+    padding: 2vmin 5vmin!important;
+    color: rgba(255, 255, 255, 0.767)!important;
+    transition: all .4s linear;
+}
+.nav-link:hover,:focus{
+    color: rgb(128, 0, 145)!important;
+    transition: all .4s linear;
+}
+.dropdown-menu{
+    background-color:transparent ;
+    min-width: 0!important;
+}
+.dropdown:hover .dropdown-menu{display: block;}
+.dropdown-item{
+    color:rgba(255, 255, 255, 0.767)!important;
+    background-color:transparent!important;
+    transition: all .3s linear;
+}
+.dropdown-item:hover{
+    transition: all .3s linear;
+    color:rgb(128, 0, 145)!important;
+}
+.md{
+    margin-bottom: 2em;
+    margin-top: 10em;
+}
+.crt {
+    margin: 0%;
+    color:rgba(255, 255, 255, 0.767);
+    font-size: .8em;
+}
+.icons a{
+    margin: 0em 1em;
+    font-size: 1em;
+    text-decoration: none;
+    color: rgba(255, 255, 255, 0.767);
+    transition: all .2s ease-in-out;
+}
+.icons a:hover{
+    transition: all .2s ease-in-out;
+    color: blueviolet;
+}
+
+/* About Section */
+
+.about{
+    font-size: 2em;
+    text-align: center;
+    text-transform: uppercase;
+    color: silver;
+    margin-top: 3em;
+    letter-spacing: .5em;
+    animation: about 2s ease-in-out;
+}
+.about-content{
+    margin-top: 10em;
+}
+.content{
+    background-color: white;
+    padding: 5em 8em;
+}
+h2{
+    font-weight: bold;
+    padding: 10px;
+}
+.p{
+    font-weight: bold;
+    font-size: 15px;
+    line-height:30px;
+    padding: 10px;
+}
+.carousel-item{
+    height: 50%;
+    width: 75%;
+    margin-left: 10em;
+    margin-top: 5em;
+}
+.name{
+    margin-top: 2em;
+    font-size: 15px;
+}
+h3{
+    color: silver;
+    text-align: center;
+}
+
+.col-md-5::before{
+    content: "";
+    position: absolute;
+    background-color: rgba(0, 0, 0, .3);
+    height: 650px;
+    width: 550px;
+}
+
+/* Animation */
+
+@keyframes about {
+    from{
+        opacity: 0;
+        transform: translatey(-20px);
+    }
+    to{
+        opacity: 1;
+        transform:translatey(0);
+    }    
+}
+
+@keyframes fadeleft {
+    from{
+        opacity: 0;
+        transform: translatey(-4em);
+    }
+    to{
+        opacity: 1;
+        transform: translatey(0);
+    }
+}
+
+.nl1{
+    animation: slideright .7s ease-in-out .2s;
+}
+@keyframes slideright {
+    from{
+        transform: translatex(4em);
+        opacity: 0;
+    }
+    to{
+        transform: translatex(0px);
+        opacity: 1;
+    }
+}
+
+.nl2{
+    animation: slideright .8s ease-in-out .2s;
+}
+@keyframes slideright {
+    from{
+        transform: translatex(4em);
+        opacity: 0;
+    }
+    to{
+        transform: translatex(0px);
+        opacity: 1;
+    }
+}
+
+.nl3{
+    animation: slideright .9s ease-in-out .2s;
+    color: rgb(128, 0, 145)!important;
+}
+@keyframes slideright {
+    from{
+        transform: translatex(4em);
+        opacity: 0;
+    }
+    to{
+        transform: translatex(0px);
+        opacity: 1;
+    }
+}
+
+.nl4{
+    animation: slideright 1s ease-in-out .2s;
+}
+@keyframes slideright {
+    from{
+        transform: translatex(4em);
+        opacity: 0;
+    }
+    to{
+        transform: translatex(0px);
+        opacity: 1;
+    }
+}
