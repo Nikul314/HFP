@@ -96,7 +96,7 @@ a{text-decoration: none;}
 }
 .icons a{
     margin: 0em 1em;
-    font-size: 1em;
+    font-size: 17.5px;
     text-decoration: none;
     color: silver;
     transition: all .2s ease-in-out;
